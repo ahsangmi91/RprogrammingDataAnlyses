@@ -1,0 +1,436 @@
+---
+title: "Capston Project - Case Study 2: How Can a Wellness Technology Company Play
+  It Smart?"
+author: "Muhammad Ahsan"
+date: "2023-05-21"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+## Bellabeat data analysis case study!
+
+### Background
+
+In the Bellabeat data analysis case study, I am a junior data analyst working in the marketing analytics team at Bellabeat, a company that specializes in creating health-focused smart products for women. Led by Urška Sršen, the co-founder and Chief Creative Officer, Bellabeat aims to empower women by providing them with technology that informs and inspires their health and wellness.
+
+Since its establishment in 2013, Bellabeat has experienced significant growth and has become a prominent player in the global smart device market. The company's success is attributed to its innovative products and its ability to collect data on various aspects of women's health, including activity, sleep, stress, and reproductive health. By analyzing this data, Bellabeat can provide valuable insights and guidance to its users, helping them make informed decisions about their well-being.
+
+As part of the marketing analytics team, my role is to delve into the smart device data and uncover patterns and trends in how consumers are using these devices. This analysis will provide crucial insights that can inform Bellabeat's marketing strategy and drive the company's growth even further.
+
+The team's focus is on one specific Bellabeat product, and our goal is to understand the usage patterns and behaviors of consumers in relation to this product. By studying smart device usage data, we can identify opportunities for improvement, tailor marketing campaigns to target specific consumer segments, and develop strategies to enhance the overall user experience.
+
+Throughout the analysis, we will closely collaborate with key team members, including Urška Sršen and Sando Mur, the mathematician and co-founder of Bellabeat. Their expertise and guidance will be instrumental in ensuring that our findings align with the company's goals and vision.
+
+To execute this case study, we will follow a structured data analysis process, including the steps of asking pertinent questions, preparing and cleaning the data, processing and analyzing the data, sharing our insights, and ultimately taking action based on our findings. By the end of this project, we aim to deliver a comprehensive analysis and actionable recommendations that will contribute to the success of Bellabeat's marketing strategy.
+
+Overall, this case study provides an opportunity to apply our data analysis skills in a real-world context and showcase our ability to derive valuable insights from complex datasets. It also allows us to demonstrate our understanding of Bellabeat's mission and business goals, and how data-driven decision-making can drive the company's growth and impact in the smart device market.
+
+## I- ASK
+
+In the "Ask" phase of this case study, the main objective is to identify the business task and consider key stakeholders. Since we are analyzing smart device usage data to gain insights and inform Bellabeat's marketing strategy, we can start by exploring some trends in smart device usage. Let's dive into the data analytics process:
+Data Analytics - Ask Phase:
+
+#### 1.	Identify the Business Task:
+
+The business task is to analyze smart device usage data and gain insights into how consumers use non-Bellabeat smart devices. The goal is to understand trends in smart device usage and apply those insights to Bellabeat's marketing strategy for one of their products.
+
+#### 2.	Consider Key Stakeholders:
+
+The key stakeholders for this analysis include Urška Sršen (Bellabeat's cofounder and Chief Creative Officer), Sando Mur (Bellabeat's cofounder and key member of the executive team), and the Bellabeat marketing analytics team.
+Now, let's proceed to explore some trends in smart device usage:
+
+#### 3.	Explore Smart Device Usage Data:
+
+•	Identify relevant data sources: Obtain smart device usage data from various sources, such as market research reports, surveys, user reviews, and industry publications.
+
+•	Analyze usage patterns: Examine how consumers interact with different features and functionalities of non-Bellabeat smart devices. Look for common usage patterns, popular features, and any gaps or areas for improvement.
+
+•	Understand user preferences: Analyze data to identify user preferences in terms of device styles, colors, materials, and form factors. Determine which design elements resonate most with consumers.
+
+•	Conduct competitor analysis: Analyze usage data from competing smart devices to gain insights into their strengths and weaknesses. Identify areas where Bellabeat can differentiate themselves and offer unique value propositions.
+
+#### 4.	Extract Insights:
+
+•	Identify popular features: Determine which features and functionalities are most frequently used and valued by consumers in non-Bellabeat smart devices.
+
+•	Understand consumer behavior: Gain insights into how consumers integrate smart devices into their daily lives, their motivations for using these devices, and any pain points they might experience.
+
+•	Identify emerging trends: Look for emerging trends in smart device usage, such as new features, user behaviors, or adoption patterns, that can inform Bellabeat's marketing strategy.
+
+#### 5.	Summarize Key Findings:
+
+•	Create a summary of the trends and insights discovered during the analysis.
+
+•	Highlight the most significant findings and their potential implications for Bellabeat's marketing strategy.
+
+Based on these initial data analytics in the "Ask" phase, we can proceed to the next phases of the data analysis process, including data preparation, processing, analysis, sharing, and taking action.
+
+## II- PREPARE
+
+In this case study, we are working with the FitBit Fitness Tracker Data obtained from a public data set available on Kaggle. The data consists of personal fitness tracker information from thirty Fitbit users. These users have consented to the submission of their personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. The data includes details about daily activity, steps, and heart rate, which can be used to analyze users' habits.
+
+Here is the information regarding the data preparation process:
+
+#### 1. Data Storage:
+
+The data is stored in 18 CSV files in a designated folder on the hard disk 
+
+#### 2. Data Organization:
+
+The data is organized into 18 CSV files, each containing different aspects of the FitBit tracker data. The specific file we have selected for analysis is "dailyActivity_merged.csv".
+
+#### 3. Data Bias and Credibility:
+
+There may be potential issues with bias and credibility in the data. The limitations of the data set include the small sample size of only thirty FitBit users, which may not be representative of the entire fitness population. Additionally, the data was collected through a survey via Amazon Mechanical Turk, and we cannot ascertain its integrity or accuracy. Below is the data ROCCC assessment.
+
+•	Reliable: The data is considered unreliable due to the small sample size of only 30 respondents.
+
+•	Original: The data is obtained from a third-party provider, Amazon Mechanical Turk, and not directly collected by Bellabeat.
+
+•	Comprehensive: The parameters in the dataset match most of Bellabeat's products' parameters, providing some relevance.
+
+•	Current: The data is five years old and may not reflect current trends or habits accurately.
+
+•	Cited: The data is collected from a third-party source, and the specific citation or references are unknown.
+
+Considering the above factors, the overall quality of the dataset is deemed low, and it is not recommended to solely rely on this data for producing business recommendations.
+
+
+#### 4. Licensing, Privacy, Security, and Accessibility:
+
+The FitBit Fitness Tracker Data set is publicly available on Kaggle under the CC0 license, which means it is in the public domain. Regarding privacy and security, it is essential to handle the data in accordance with applicable data protection regulations and ensure the privacy of the users. Access to the data should be restricted to authorized individuals involved in the analysis.
+
+#### 5. Data Integrity Verification:
+
+The data's integrity can be verified through various methods, such as checking for missing or inconsistent values, validating against expected ranges, and comparing with other reliable data sources if available. Additionally, conducting exploratory data analysis can help identify any anomalies or data quality issues.
+
+#### 6. Relevance to the Analysis:
+
+The FitBit Fitness Tracker Data provides valuable information about users' daily activity, steps, and heart rate, which aligns with our goal of analyzing smart device usage. By exploring this data, we can gain insights into how consumers are using their smart devices and use this information to guide Bellabeat's marketing strategy.
+
+#### 7. Data Problems:
+
+Some potential problems with the data include missing values, outliers, inconsistent formatting, or inaccuracies introduced during the data collection process. These issues need to be addressed during the data cleaning and preparation stage.
+
+## III- PROCESS
+
+To process the data for analysis, we will follow the Case Study Roadmap - Process. Here are the key tasks involved:
+
+Check the data for errors:
+
+#### Review the data to identify any inconsistencies, missing values, or outliers.
+
+Explore the sturcture and summary of DATASET
+
+#### Setting up environment
+
+We will use R programming for sorting and filtering of data.
+
+```{r}
+library(tidyverse)
+```
+```{r}
+library(lubridate)
+library(dplyr)
+library(skimr)
+library(janitor)
+library(sqldf)
+library(plotrix)
+```
+
+we can read the data from secured hard disk with the help of command read.csv and stored them in a variable of our choice.
+
+```{r}
+daily_activity <- read.csv(choose.files())
+```
+```{r}
+daily_sleep <- read.csv(choose.files())
+```
+```{r}
+weight_log <- read.csv(choose.files())
+```
+
+We need to see if there are any null or missing values in the data. We can check this using the following commands.
+
+```{r}
+str(daily_activity)
+```
+```{r}
+skim(daily_activity)
+```
+```{r}
+head(daily_activity)
+```
+```{r}
+str(daily_sleep)
+```
+```{r}
+skim(daily_sleep)
+```
+
+```{r}
+head(daily_sleep)
+```
+
+```{r}
+str(weight_log)
+```
+```{r}
+skim(weight_log)
+```
+```{r}
+head(weight_log)
+```
+#### From the above observation, findings are mentioned below:
+
+* There are 15 colomns and 940 rows in daily_activity data.
+* There are 5 colomns and 413 rows in daily_sleep data.
+* There are 8 colomns and 67 rows in weight_log data.
+* There is a wrong datatype placed which is character instead of Datetime64 so we will change it into Datetime64.
+
+```{r}
+daily_activity$Rec_Date <- as.Date(daily_activity$ActivityDate,"%m/%d/%y")
+daily_activity$month <- format(daily_activity$Rec_Date,"%B")
+daily_activity$day_of_week <- format(daily_activity$Rec_Date,"%A")
+```
+
+* Now we will count IDs
+
+```{r}
+n_distinct(daily_activity$Id)
+```
+* There are 33 ids observed while it should be 30 according to the survey. There may be duplicate entries in the Dataset.
+
+* As we have clean and manipulate data, now we will analyse it.
+
+## IV- Analyse
+
+* We need to summarize the data now,
+
+```{r}
+daily_activity %>%  select(TotalSteps,TotalDistance,SedentaryMinutes,VeryActiveMinutes) %>% summary()
+```
+###Interpreting statistical findings:
+
+#### 1. Findings from Daily Activity data :
+
+* The average count of recorded steps is 7638 which is less than recommended 10000 steps and average of total distance covered is 5.490 km which is also less than recommended 8 km mark.
+* The average sedentary minutes is 991.2 minutes or 16.52 hours which is very high as it should be at most 7 hours.Even if you are doing enough physical activity, sitting for more than 7 to 10 hours a day is bad for your health. (source: HealthyWA article).
+* The average of very active minutes is 21.16 which is less than target of 30 minutes per day. (source:verywell fit)
+
+#### 2. Findings from weight log:
+
+* We can not conclude healthiness of person just by knowing there weight, There are other factors like height,fat percentage affect in the health.
+* The average of BMI is 25.19 which is slightly grater than the healthy BMI range which is between 18 and 24.9.
+
+#### 3. Findings from daily sleep data:
+
+* To find insights from sleep data we need to run the following queries:
+
+```{r}
+Avg_minutes_asleep <- sqldf("SELECT SUM(TotalSleepRecords),SUM(TotalMinutesAsleep)/SUM(TotalSleepRecords) as avg_sleeptime
+                            FROM daily_sleep")
+Avg_minutes_asleep
+```
+```{r}
+Avg_TimeInBed <- sqldf("SELECT SUM(TotalTimeInBed)/SUM(TotalSleepRecords) as avg_timeInBed
+                       FROM daily_sleep")
+
+Avg_TimeInBed
+```
+* There is difference of 35 minutes between time in bed and sleep time that means it takes on an average 20 to 30 minutes to fall asleep for peoples.
+* We will also calculate number of distinct records in daily sleep and weight log data.
+
+```{r}
+n_distinct(daily_sleep$Id)
+```
+```{r}
+n_distinct(weight_log$Id)
+```
+## V- Share
+
+To effectively communicate our findings, we will create visualizations using various R packages such as ggplot2, plotly, or ggvis. These packages offer a wide range of options for creating appealing and informative plots. 
+
+Bar chart of Number of times user used tracker accross week:
+
+```{r}
+daily_activity$day_of_week <- ordered(daily_activity$day_of_week,levels=c("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"))
+
+ggplot(data=daily_activity) + geom_bar(mapping = aes(x=day_of_week),fill="blue") +
+  labs(x="Day of week",y="Count",title="No. of times users used tracker across week")
+```
+As we can see there is increasing trend of using tracker on Sunday,Monday and Tuesday.
+
+Now we will find out the mean of steps and calories burned;
+
+```{r}
+mean_steps <- mean(daily_activity$TotalSteps)
+mean_steps
+```
+```{r}
+mean_calories <- mean(daily_activity$Calories)
+mean_calories
+```
+we will use the scattered plot to check calories burned against step taken
+
+```{r}
+ggplot(data=daily_activity) + geom_point(mapping=aes(x=TotalSteps, y=Calories, color=Calories)) +
+geom_hline(mapping = aes(yintercept=mean_calories),color="yellow",lwd=1.0) +
+  geom_vline(mapping = aes(xintercept=mean_steps),color="red",lwd=1.0) +
+  geom_text(mapping = aes(x=10000,y=500,label="Average Steps",srt=-90)) +
+  geom_text(mapping = aes(x=29000,y=2500,label="Average Calories")) +
+  labs(x="Steps Taken",y="Calories Burned",title = "Calories burned for every step taken")
+
+```
+
+#### Calories burned for every step taken
+
+* It is a positive correlation with some outliers at bottom and top of scatter plot.
+* It is clear from the plot that intensity of calories burned increase with number of steps taken.
+
+Now we will check total steps against sedentary minutes.
+
+```{r}
+ggplot(data=daily_activity, aes(x=TotalSteps, y=SedentaryMinutes, color = Calories)) + geom_point() +
+geom_smooth(method = "loess",color="green") + 
+labs(x="Total Steps",y="Sedentary Minutes",title="Total Steps vs Sedentary Minutes")
+```
+
+#### Total steps taken vs sedentary minutes
+
+* At the beginning total steps taken are less than 10000, so the relation between them was inversed, but as number of steps raised to 10000, no drastic change can be seen.
+
+```{r}
+ggplot(data=daily_sleep, aes(x=TotalMinutesAsleep, y=TotalTimeInBed)) + geom_point() + stat_smooth(method = lm) +
+  labs(x="Total Minutes a sleep", y="Total Time in Bed", title = "Sleep Time vs Time in Bed")
+```
+#### Relation between sleep and time in bed
+
+* As we can see, there is a strong positive correlation between TotalMinutesAsleep and TotalTimeInBed, but there are some outliers in data in the middle and top of plot.
+* The outliers are one who spend lot of time in bed but didn’t actually sleep.There can be different reasons for that.
+
+```{r}
+ggplot(data=daily_activity,aes(x = VeryActiveMinutes, y = Calories, color = Calories)) + geom_point() + 
+geom_smooth(method = "loess",color="orange") +
+labs(x="Very Active Minutes",y="Calories",title = "Very Active Minutes vs Calories Burned")
+```
+#### Relation between very active minutes and calories burned
+
+* As we can see,very active minutes and calories burned are highly correlated with each other with some outliers at bottom left and top left of the plot.
+
+```{r}
+ggplot(data=daily_activity,aes(x=SedentaryMinutes,y=Calories,color=Calories)) + geom_point() + 
+geom_smooth(method="loess",color="red") + 
+labs(y="Calories", x="Sedentary Minutes", title="Calories vs. Sedentary Minutes")
+
+```
+#### Relation between sedentary minutes and calories burned:
+
+
+* The data is showing positive correlation up to 1000 sedentary minutes.
+* After 1000 sedentary minutes the relation is inverse.
+
+Now,we will calculate the sum of individual minute column from daily activity data.
+
+```{r}
+activity_min <- sqldf("SELECT SUM(VeryActiveMinutes),SUM(FairlyActiveMinutes),
+      SUM(LightlyActiveMinutes),SUM(SedentaryMinutes)
+      FROM daily_activity")
+activity_min
+```
+As we got the values, we will use these values to plot a 3D pie chart to compare the percentage of activity by minutes.
+
+```{r}
+x <- c(19895,12751,181244,931738)
+```
+
+```{r}
+piepercent <- round(100*x / sum(x), 1)
+colors = c("red","blue","green","yellow")
+
+```
+
+```{r}
+pie3D(x,labels = paste0(piepercent,"%"),col=colors,main = "Percentage of Activity in Minutes")
+legend("bottomright",c("VeryActiveMinutes","FairlyActiveMinutes","LightlyActiveMinutes","SedentaryMinutes"),cex=0.5,fill = colors)
+```
+
+#### Percentage of activity in Minutes:
+
+As we can see,
+
+* The percentage of sedentary minutes is very high than all other,which covers 81.3 % of pie this indicates that people are inactive for longer period of time.
+* The percentage of very active and fairly active minutes is very less ie. 1.7%,1.1% respectively,which is very less compared to other activities.
+
+Now, we will calculate sum of different distance values from daily activity data:
+
+
+```{r}
+activity_dist <- sqldf("SELECT SUM(ModeratelyActiveDistance),SUM(LightActiveDistance),
+      SUM(VeryActiveDistance),SUM(SedentaryActiveDistance)
+      FROM daily_activity")
+activity_dist
+```
+As we can see that the values of sedentaryActiveDistance is very less as compare to other distances,So we will be excluding it in drawing a 3D pie chart to compare the percentage of activity in minutes.
+
+
+```{r}
+y <- c(533.49,3140.37,1412.52)
+piepercent <- round(100*y / sum(y), 1)
+colors = c("orange","green","blue")
+pie3D(y,labels = paste0(piepercent,"%"),col=colors,main = "Percentage of Activity in Distance")
+legend("bottomright",c("ModeratelyActiveDistance","LightlyActiveDistance","VeryActiveDistance"),cex=0.5,fill = colors)
+```
+#### Percentage of activity in distance:
+
+As we can see,
+
+* The percentage of lightly active distance is highest with 61.7% and that of moderately active distance is 10.5%.
+* The percentage of very active distance is 27.8% which is good, but it can be increased further so that people can achieve there fitness goals.
+
+Now, we will calculate the count of people with over weight: The BMI for healthy person is between 18.5 and 24.9 and the persons who’s BMI is above 24.9 are considered to be overweight.(source:CDC)
+
+```{r}
+count_overweight <- sqldf("SELECT COUNT(DISTINCT(Id))
+                          FROM weight_log
+                          WHERE BMI > 24.9")
+count_overweight
+```
+As we got the values, we will use these values to plot a 3D pie chart to compare the percentage of people with overweight vs healthy weight.
+
+```{r}
+z <- c(5,3)
+piepercent <- round(100*z / sum(z),1)
+colors = c("red","green")
+pie3D(z,labels=paste0(piepercent,"%"),explode=0.1,col=colors,radius=1,main="Percentage of people with Over Weight vs Healthy Weight")
+legend("bottomright",c("OverWeight","HealthyWeight"),cex=0.5,fill=colors)
+
+```
+We have less number of records,but we can see
+
+* The percentage of people with over weight is 62.5% which is high as compared to percentage of people with healthy weigh which is 37.5%. So, there is a very good opportunity to increase the percentage of people with healthy weight.
+
+## VI- Act Phase:
+
+The pursuit of analysis proves to be highly valuable, as it has yielded a multitude of insightful findings from the FitBit data. These findings, in turn, empower us to embrace a data-driven approach to decision-making. Given that both companies develop similar products, it stands to reason that the prevailing trends in health and fitness can be effectively applied to Bellabeat's customer base as well.
+
+Based on our comprehensive analysis, I humbly offer the following recommendations:
+
+Firstly, our examination reveals that a majority of individuals primarily employ the application to track their steps and calories burned, while a smaller portion utilizes it for monitoring their sleep patterns, and even fewer for recording weight-related information. Consequently, I propose focusing our efforts on enhancing step, calorie, and sleep tracking functionalities within the application.
+
+Secondly, we have observed a noteworthy tendency among users to be more active in tracking their activities on Sundays, Mondays, and Tuesdays, compared to other days of the week. It appears that this behavior stems from the increased demands and pressures of work during the weekend, leaving individuals with insufficient time to monitor their physical activity. Hence, targeting these particular days and the initial days of the week might prove advantageous.
+
+Furthermore, the analysis indicates a positive correlation between the number of steps taken versus calories burned, as well as between very active minutes and calories burned. This correlation presents an opportune avenue for devising an effective marketing strategy.
+
+Another key finding reveals that a significant majority, approximately 81.3%, of FitBit app users exhibit prolonged periods of inactivity, failing to utilize the app for tracking their health habits. This valuable information can serve as the foundation for a compelling marketing strategy, wherein Bellabeat can proactively alert individuals about their sedentary behavior, either through the application itself or directly on their tracker.
+
+Moreover, it is worth noting that a substantial percentage, 62.5%, of fitness tracker users are identified as overweight. This represents a prime opportunity to inspire and influence these individuals toward healthier lifestyles.
+
+To capitalize on these insights, Bellabeat's marketing team can employ a multifaceted approach. By educating and empowering users with comprehensive knowledge about the benefits of fitness, suggesting various exercise regimens, and providing information on calorie intake and expenditure through the Bellabeat application, we can foster a sense of motivation and engagement among our user base.
+
+
+
+
+
